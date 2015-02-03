@@ -7,7 +7,7 @@ This presentation is our end-of-project presentation to the entire capstone clas
 
 # reveal.js
 
-reveal.js is utilizated to create this presentation. More informaton on reveal.js can be found at the [project website](https://github.com/hakimel/reveal.js/), which describes how to use reveal.js and such.
+reveal.js is utilizated to create this presentation. More information on reveal.js can be found at the [project website](https://github.com/hakimel/reveal.js/), which describes how to use reveal.js and such.
 
 
 # How to view/edit/develop:
@@ -20,12 +20,12 @@ To do local development:
 
 4. Clone this repo to your local machine
    ```sh
-   $ git clone http://github.com/PSU-Capstone-2014-B/announcement_presentation
+   $ git clone https://github.com/PSU-Capstone-2014-B/final_presentation.git
    ```
 
 5. Navigate to the project folder
   ```sh
-  $ cd announcement_presentation
+  $ cd final_presentation
   ```
 
 6. Install dependencies
