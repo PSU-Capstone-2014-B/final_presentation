@@ -1,8 +1,8 @@
-# PSU Capstone 2014 Team B: Project Announcement Presentation
+# PSU Capstone 2014 Team B: Final Presentation
 
 This is an HTML based presentation for PSU's Fall/Winter 2014 Capstone program, Team B.
 
-This presentation is our end-of-first-quarter project description and announcement.
+This presentation is our end-of-project presentation to the entire capstone class, after 2 quarters of working on the project.
 
 
 # reveal.js
