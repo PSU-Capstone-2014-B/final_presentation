@@ -84,39 +84,24 @@
         </section>
 
         <section>
-          <h2>There is a problem:</h2>
-          <h2>We have data.</h2>
-          <h2>We have a solution.</h2>
-          <p>
-          	  <ul>
-          	  	   <li>Have you ever been frustrated that you left work and spent 2 hours waiting in traffic?</li>
-          	  	   <li>Perhaps you would have rather stayed at work and got more done and later took a shorter trip?</li>
-          	  	   <li>PORTAL provides large amounts of data about the freeways within the Portland Metro Area!</li>
-          	  	   <li>With routlandia, all of your problems will be solved!</li>
-			  </ul>
-          </p>
-
-          <aside class="notes">
-          </aside>
-        </section>
-
-        <section>
           <h2>Basic Overview of Routelandia</h2>
           <p>
 		  <ul>
-			Android App
-			Presents travel times on highways
-			<li>
-			  near Portland
-			  displaced from origin
-			  historical data
-			</li>
-			Traffic is vaguely cyclical
-			Lets you know best time to hit highway
+			<li>Android App Presents travel times on highways near Portland</li>
+			<li>historical data</li>
+			<li>Traffic is vaguely cyclical</li>
+			<li>Lets you know best time to hit highway</li>
+            <li>-------------------------------------------------</li>
+            <li>Have you ever been frustrated that you left work and spent 2 hours waiting in traffic?</li>
+            <li>Perhaps you would have rather stayed at work and got more done and later took a shorter trip?</li>
+            <li>PORTAL provides large amounts of data about the freeways within the Portland Metro Area!</li>
 		  </ul>
           </p>
 
           <aside class="notes">
+              Answer these questions:
+              What does your product do? Why is it needed? Who will use it?
+
 		    Routelandia is an app that runs natively on android phones
 			which shows travel times on highways. As our data is local
 			to the general Portland area, those are the highways
@@ -135,7 +120,7 @@
         </section>
 
         <section>
-          <h2>Interesting technical challenges: Backend</h2>
+          <h2>Assumptions constraints and references</h2>
           <p>
 
           </p>
@@ -144,109 +129,158 @@
           </aside>
         </section>
 
-
-        <section>
-          <h2>A REST Service</h2>
-          <p>
-            <ul>
-                <li>RESTler framework to abstract away the nitty gritty of REST</li>
-                <li>Communicates with frontend via JSON</li>
-                <li>Does the majority of the number crunching</li>
-                <li>Communicates with PORTALs database to generate statistics</li>
-                <li>BDD testing with Behat</li>
-                <li>All written in PHP using Model View Controller</li>
-            </ul>
-          </p>
-
-          <aside class="notes">
-          </aside>
-        </section>
-
-        <section>
-          <h2>Any Questions?</h2>
-          <p>
+          <section>
+              <h2>Limitations of the App</h2>
+              <p>
               <ul>
-            <li>limited only to highway data</li>
-            <ul><li>This was a deliberate choice</li>
-            <li>Highway data was the oldest and most stable of the data</li>
-            <li>We rely on hisortical data so it made since to choose the data with the largest archive</li></ul>
-            <li>Currently cannot generate statistics across multiple highways</li>
-            <ul><li>We have a potential way for a future team to implement this</li></ul>
-        </ul>
+                  <li>limited only to highway data</li>
+                  <ul><li>This was a deliberate choice</li>
+                      <li>Highway data was the oldest and most stable of the data</li>
+                      <li>We rely on hisortical data so it made since to choose the data with the largest archive</li></ul>
+                  <li>Currently cannot generate statistics across multiple highways</li>
+                  <ul><li>We have a potential way for a future team to implement this</li></ul>
+              </ul>
 
-          </p>
+              </p>
 
-          <aside class="notes">
-          </aside>
-        </section>
+              <aside class="notes">
+                  The over view answers the "what can your product do" questions, next we answer
+                  "what cant it do, what did we plan for that didn't happen"
+              </aside>
+          </section>
 
-        <section>
-            <h2>Development</h2>
-            <p>
-                ODOT probably wont care much about this -PG
+          <section>
+              <h2>Deliverables</h2>
+              <p>
                 <ul>
-                    <li>"Full time student" agile</li>
-                    <li>No daily stand ups</li>
-                    <li>Weekly "sprints" and goal setting</li>
-                </ul>
-            </p>
+              <li>A functioning Android application which talks to a server deployed through PORTAL</li>
+              <li>The app will be distributed via Google PlayStore</li>
+              <li>Kristins server management will deploy the PHP backend</li>
+          </ul>
+              </p>
 
-            <aside class="notes">
-            </aside>
-        </section>
+              <aside class="notes">
+              </aside>
+          </section>
 
-        <section>
-            <h2>What we learned</h2>
-            <p>
-                I will bet this wil probably want to be two slides -PG
-                <ul>
-                    <li>The good and bad of working with a team to produce something</li>
-                        <ul><li>Im assuming this was a first for most of us, should expand on it</li></ul>
-                <li><b>Leaving slide unfinished so front end can also add</b> </li>
-                </ul>
-            </p>
+          <section>
+              <h2>Schedules and Process</h2>
+              <p>
+              <ul>
+                  <li>"Full time Student" agile</li>
+                    <ul><li>No daily stand ups</li>
+                    <li>Weekly meetings and goal setting</li></ul>
+                  <li><b>Run through our schedule changes (<---- Rob)</b></li>
+                  <li>Kristins server management guy will deploy the PHP backend</li>
+              </ul>
+              </p>
 
-            <aside class="notes">
-            </aside>
-        </section>
+              <aside class="notes">
+              </aside>
+          </section>
 
-        <section>
-            <h2>What we would've done differently</h2>
-            <p>
-                <ul>
-                    <li>Backend would not have gone with PHP</li>
-                    <ul>
-                        <li>Its quirkiness often slowed progress</li>
-                        <li>The frameworks we used had little support</li>
-                    </ul>
-                    <li>Setting up a testing environment immediately</li>
-                    <li><b>Leaving slide unfinished so front end can also add</b> </li>
-                </ul>
-            </p>
+          <section>
+              <h2>Who did what?</h2>
+              <p>
+              <ul>
+                  <li>Front end</li>
+                  <ul><li>Nasim, Loc, John</li></ul>
+                  <li>Backend</li>
+                    <ul><li>Josh, Jesse, Peter</li></ul>
+                  <li></li>
+              </ul>
+              </p>
 
-            <aside class="notes">
-            </aside>
-        </section>
+              <aside class="notes">
+                  Originally, Nasim and Jesse were assigned to work on UI design. Once this was finished, they were split up into the front/back-end team.
 
-        <section>
-            <h2>If we had more time</h2>
-            <p>
-            </p>
+                  Each sub team had a team lead and they managed that team,
+                  josh was back end team lead. The tasks removed from backends
+                  original plan happened when we restructured the project to
+                  make the backend the majority number cruncher. That required
+                  changing how we talked to the database, how we futz’d with that
+                  data and how we returned it.
 
-            <aside class="notes">
-            </aside>
-        </section>
+              </aside>
+          </section>
 
-        <section>
-            <h2>Conclusion</h2>
-            <p>
-                how are we gonna wrap this up gang?
-                Suggestions: Summary of how we feel about the project? ("overall it was a good learning experience")
-            </p>
+          <section>
+              <h2>Pitfalls and roadblocks</h2>
+              <p>
+              <ul>
+                  <li>Significant design change halfway through project</li>
+                  <li>Data from Portal had quirks</li>
+                  <li>Portal was restructuring their database</li>
+              </ul>
+              </p>
 
-            <aside class="notes">
-            </aside>
-        </section>
+              <aside class="notes">
+                  We discovered we would not be able to associate attributes to drawn
+                  lines on google maps which caused us to have to restructure our project.
+                  We responded by having one particularly long meeting figuring out how to
+                  attack the project from this new angle.
+
+                  We also had some issues with the PORTAL database, having null/empty spots.
+                  Mitigated this by ignoring the bad data as it came in. Also the
+                  database was going through a restructure as we were working on it
+                  which caused us to have to get clever with the stats query.
+              </aside>
+          </section>
+
+          <section>
+              <h2>What we learned</h2>
+              <p>
+                  I will bet this wil probably want to be two slides -PG
+              <ul>
+                  <li>The good and bad of working with a team to produce something</li>
+                  <ul><li>Im assuming this was a first for most of us, should expand on it</li></ul>
+                  <li><b>Leaving slide unfinished so front end can also add</b> </li>
+              </ul>
+              </p>
+
+              <aside class="notes">
+              </aside>
+          </section>
+
+          <section>
+              <h2>What we would've done differently</h2>
+              <p>
+              <ul>
+                  <li>Backend would not have gone with PHP</li>
+                  <ul>
+                      <li>Its quirkiness often slowed progress</li>
+                      <li>The frameworks we used had little support</li>
+                  </ul>
+                  <li>Setting up a testing environment immediately</li>
+                  <li><b>Leaving slide unfinished so front end can also add</b> </li>
+              </ul>
+              </p>
+
+              <aside class="notes">
+              </aside>
+          </section>
+
+          <section>
+              <h2>If we had more time</h2>
+              <p>
+              </p>
+
+              <aside class="notes">
+              </aside>
+          </section>
+
+          <section>
+              <h2>Conclusion</h2>
+              <p>
+                  how are we gonna wrap this up gang?
+                  Suggestions: Summary of how we feel about the project? ("overall it was a good learning experience")
+              </p>
+
+              <aside class="notes">
+              </aside>
+          </section>
+
+
       </div>
 
     </div>
