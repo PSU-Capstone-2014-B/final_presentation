@@ -57,64 +57,70 @@
           <h3>Remember us?</h3>
           <p>By:<br/>Jesse Wagner, John Donahue, Josh Proehl, Loc Le, Nasim Sanati, Peter Gicking, Rob Werfelmann</p>
           <aside class="notes">
+          OWNER: Rob
           </aside>
         </section>
 
         <section>
           <h2>Basic Overview of Routelandia</h2>
           <p>
-      <ul>
-      <li>Android App Presents travel times on highways near Portland</li>
-      <li>historical data</li>
-      <li>Traffic is vaguely cyclical</li>
-      <li>Lets you know best time to hit highway</li>
-      </ul>
+          <ul>
+            <li>Android App Presents travel times on highways near Portland</li>
+            <li>historical data</li>
+            <li>Traffic is vaguely cyclical</li>
+            <li>Lets you know best time to hit highway</li>
+          </ul>
           </p>
 
           <aside class="notes">
-              Answer these questions:
-              What does your product do? Why is it needed? Who will use it?
+            OWNER: John
+            Answer these questions:
+            What does your product do? Why is it needed? Who will use it?
 
-        Routelandia is a native android app that
-      shows travel times along highways. To do this, it
-      pulls historical traffic data from highways around
-      the general Portland area.
+            Routelandia is a native android app that
+            shows travel times along highways. To do this, it
+            pulls historical traffic data from highways around
+            the general Portland area.
 
-      The hook is this app won't just give you a travel
-      time for just one moment, but before and after it as well.
-      It does this by looking at travel times in the near past
-      to predict them in the future.
+            The hook is this app won't just give you a travel
+            time for just one moment, but before and after it as well.
+            It does this by looking at travel times in the near past
+            to predict them in the future.
 
-      Traffic tends to follow cycles, as anyone in
-      rush-hour traffic can tell you. Routelandia lets you
-      conveniently see what those cycles look like,
-      letting anyone know when's the best time to hit the road.
+            Traffic tends to follow cycles, as anyone in
+            rush-hour traffic can tell you. Routelandia lets you
+            conveniently see what those cycles look like,
+            letting anyone know when's the best time to hit the road.
           </aside>
         </section>
 
         <section>
-          <h2>Turning Data Into Information</h2>
-          <p>
-            <ul>
-            <ul align="left">There is data all over Portland</ul>
-            <ul>
-                <ul>
-              <li>Traffic detectors</li>
-              <li>Public transportation statistics</li>
-            </ul>
-            </ul>
-            <ul align="left">ITS & PORTAL</ul>
-                <ul><ul>
-              <li>Intelligent Transportation Systems</li>
-              <li>Various applications and technologies for colecting traffic information</li>
-              <li>Portland, Oregon Regional Transportation Archive Listing</li>
-              <li>Archives the collected data in the Portland metro area</li>
-              <li>3 TB of data stored</li>
-                </ul></ul>
-        </ul>
-          </p>
+          <h2>Turning Data Into Information (Why do this project?)</h2>
+          <ul>
+            <li class="fragment">
+              <b>There is data all over Portland</b><br />
+              <ul align="left">
+                <li>Traffic detectors</li>
+                <li>Public transportation statistics</li>
+              </ul>
+            </li>
+            <li class="fragment">
+              <b>ITS & PORTAL</b><br />
+              <ul align="left">
+                <li>Intelligent Transportation Systems</li>
+                <li>Various applications and technologies for colecting traffic information</li>
+                <li>Portland, Oregon Regional Transportation Archive Listing</li>
+                <li>Archives the collected data in the Portland metro area</li>
+                <li>3 TB of data stored</li>
+              </ul>
+            </li>
+          </ul>
 
           <aside class="notes">
+            OWNER: Nasim
+            - Data is hard!
+            - Information should be easy!
+
             ITS is an organization that has a place here at PSU. It stands for "Intelligent Transportation Systems". ITS' role here
             is to collect and analyze various information about traffic.
             PORTAL is a sub-group within ITS that has a more specific role. It stands for Portland, Oregon Regional Transportation
@@ -122,112 +128,147 @@
           </aside>
         </section>
 
+
         <section>
-          <h2>Assumptions constraints and references</h2>
-          <p>
-
-          </p>
-
-          <aside class="notes">
-          </aside>
-        </section>
-
-          <section>
-              <h2>Limitations of the App</h2>
-              <p>
-              <ul>
-                  <li>limited only to highway data</li>
-                  <ul><li>This was a deliberate choice</li>
-                      <li>Highway data was the oldest and most stable of the data</li>
-                      <li>We rely on hisortical data so it made since to choose the data with the largest archive</li></ul>
-                  <li>Currently cannot generate statistics across multiple highways</li>
-                  <ul><li>We have a potential way for a future team to implement this</li></ul>
-              </ul>
-
-              </p>
-
-              <aside class="notes">
-                  The over view answers the "what can your product do" questions, next we answer
-                  "what cant it do, what did we plan for that didn't happen"
-              </aside>
-          </section>
-
-          <section>
-              <h2>Deliverables</h2>
-              <p>
-                <ul>
+            <h2>What does it look like?</h2>
+            <ul>
               <li>A functioning Android application which talks to a server deployed through PORTAL</li>
               <li>The app will be distributed via Google PlayStore</li>
               <li>Kristins server management will deploy the PHP backend</li>
-          </ul>
-              </p>
+            </ul>
 
-              <aside class="notes">
-              </aside>
+            <aside class="notes">
+              OWNER: Loc
+            </aside>
+        </section>
+
+        <section>
+          <section>
+            <h2>So how did we do it?</h2>
+            <p>
+              (Assumptions constraints and references)
+
+              <ul>
+                <li>Tech used</li>
+              </ul>
+            </p>
+            <aside class="notes">
+              OWNER: ROB
+            </aside>
+          </section>
+
+          <section>
+            <h2>Who did what?</h2>
+            <p>
+              We split up into teams!
+              <ul>
+                <li class="fragment"><b>Front end</b>
+                  <ul>
+                    <li>Nasim is UI/UX in the front end and plot the statistics graph</li>
+                    <li>Loc uses data from the backend draw highway in the map and sets up CI</li>
+                    <li>John</li>
+                  </ul>
+                </li>
+                <li class="fragment"><b>Backend</b>
+                  <ul>
+                    <li>Josh is bearded wizard</li>
+                    <li>Peter is tall wizard</li>
+                    <li>Jesse is test wizard</li>
+                  </ul>
+                </li>
+              </ul>
+            </p>
+
+            <aside class="notes">
+                OWNER: Rob
+                Originally, Nasim and Jesse were assigned to work on UI design. Once this was finished, they were split up into the front/back-end team.
+
+                Each sub team had a team lead and they managed that team,
+                josh was back end team lead. The tasks removed from backends
+                original plan happened when we restructured the project to
+                make the backend the majority number cruncher. That required
+                changing how we talked to the database, how we futz’d with that
+                data and how we returned it.
+            </aside>
           </section>
 
           <section>
               <h2>Schedules and Process</h2>
-              <p>
               <ul>
-                  <li>"Full time Student" agile</li>
-                    <ul><li>No daily stand ups</li>
-                    <li>Weekly meetings and goal setting</li></ul>
-                  <li>Schedule changes</li>
-                  <li>Handoff will involve deploying the PHP backend onto the Portal Server</li>
+                <li>"Full time Student" agile
+                  <ul>
+                    <li>No daily stand ups</li>
+                    <li>Weekly meetings and goal setting</li>
+                  </ul>
+                </li>
+                <li>Schedule changes</li>
+                <li>Handoff will involve deploying the PHP backend onto the Portal Server</li>
               </ul>
-              </p>
 
               <aside class="notes">
-                Each of our schedules varied greatly. John has a full-time
+                OWNER: Rob
+                <p>Each of our schedules varied greatly. John has a full-time
                 work schedule, Nasim is a student at two universities,
                 Jesse has a job and a family. With this situation, we had
                 to adopt a "modified" agile development method. It was not
                 possible to hold daily standups, but we did have weekly
                 meetings where we tracked our progress and set goals for
-                the following week.
+                the following week.</p>
 
-                Since our last presentation, we've had a few changes to the
+                <p>Since our last presentation, we've had a few changes to the
                 schedule we laid out for ourselves. As stated earlier, we
                 were unable to implement highway chaining, but refined our
                 monthly milestones such as successfully drawing lines over
                 the freeways where there was data and writing queries for
-                route statistics.
+                route statistics.</p>
 
-                Our handoff is pretty simple. Since our software is free,
+                <p>Our handoff is pretty simple. Since our software is free,
                 Portal will only need to deploy a build on their servers
                 which the app on the Playstore will reference. No signing
-                over rights or IP is necessary for this project.
+                over rights or IP is necessary for this project.</p>
               </aside>
           </section>
 
           <section>
-              <h2>Who did what?</h2>
-              <p>
-              <ul>
-                  <li>Front end</li>
-              <ul><li>Nasim is UI/UX in the front end and plot the statistics graph</li></ul>
-              <ul><li>Loc uses data from the backend draw highway in the map and sets up CI</li></ul>
-              <ul><li>John</li></ul>
-              <li>Backend</li>
-              <ul><li>Josh is bearded wizard</li></ul>
-              <ul><li>Peter is tall wizard</li></ul>
-              <ul><li>Jesse is test wizard</li></ul>
-              </ul>
-              </p>
+            Tools used.
+            <ul>
+              <li>Android, php, behat, respect/relational, restler, {CHARTING LIBRARY?}, {200 meters to the line}, etc...</li>
+            </ul>
 
-              <aside class="notes">
-                  Originally, Nasim and Jesse were assigned to work on UI design. Once this was finished, they were split up into the front/back-end team.
+            <aside class="notes">
 
-                  Each sub team had a team lead and they managed that team,
-                  josh was back end team lead. The tasks removed from backends
-                  original plan happened when we restructured the project to
-                  make the backend the majority number cruncher. That required
-                  changing how we talked to the database, how we futz’d with that
-                  data and how we returned it.
-
-              </aside>
+            </aside>
           </section>
+
+        </section>
+
+        <section>
+          <section>
+            <h2>Results</h2>
+          </section>
+
+          <section>
+            <h2>Limitations of the App</h2>
+            <ul>
+              <li>limited only to highway data
+                <ul>
+                  <li>This was a deliberate choice</li>
+                  <li>Highway data was the oldest and most stable of the data</li>
+                  <li>We rely on hisortical data so it made since to choose the data with the largest archive</li>
+                </ul>
+              </li>
+              <li>Currently cannot generate statistics across multiple highways</li>
+              <li>We have a potential way for a future team to implement this</li>
+              <li>Clicking near the line?</li>
+            </ul>
+
+            <aside class="notes">
+              OWNER: Josh
+              The over view answers the "what can your product do" questions, next we answer
+              "what cant it do, what did we plan for that didn't happen"
+            </aside>
+          </section>
+
 
           <section>
               <h2>Pitfalls and roadblocks</h2>
@@ -240,6 +281,7 @@
               </p>
 
               <aside class="notes">
+                  OWNER: Josh
                   We discovered we would not be able to associate attributes to drawn
                   lines on google maps which caused us to have to restructure our project.
                   We responded by having one particularly long meeting figuring out how to
@@ -264,47 +306,60 @@
               </p>
 
               <aside class="notes">
+                OWNER: Jesse
               </aside>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Retrospective</h2>
           </section>
 
           <section>
-              <h2>What we would've done differently</h2>
-              <p>
-              <ul>
-                  <li>Backend would not have gone with PHP</li>
-                  <ul>
-                      <li>Its quirkiness often slowed progress</li>
-                      <li>The frameworks we used had little support</li>
-                  </ul>
-                  <li>Setting up a testing environment immediately</li>
-                  <li><b>Leaving slide unfinished so front end can also add</b> </li>
-              </ul>
-              </p>
+            <h2>What we would've done differently</h2>
+            <p>
+            <ul>
+                <li>Backend would not have gone with PHP</li>
+                <ul>
+                    <li>Its quirkiness often slowed progress</li>
+                    <li>The frameworks we used had little support</li>
+                </ul>
+                <li>Setting up a testing environment immediately</li>
+                <li><b>Leaving slide unfinished so front end can also add</b> </li>
+            </ul>
+            </p>
 
-              <aside class="notes">
-              </aside>
+            <aside class="notes">
+              OWNER: Peter
+            </aside>
           </section>
 
           <section>
-              <h2>If we had more time</h2>
-              <p>
-              </p>
+            <h2>If we had more time</h2>
+            <p>
+              IOS App<br />
+              Multi-freeway routing<br />
+              
+            </p>
 
-              <aside class="notes">
-              </aside>
+            <aside class="notes">
+              OWNER: Peter
+            </aside>
           </section>
+        </section>
 
-          <section>
-              <h2>Conclusion</h2>
-              <p>
-                  how are we gonna wrap this up gang?
-                  Suggestions: Summary of how we feel about the project? ("overall it was a good learning experience")
-              </p>
+        <section>
+            <h2>Conclusion</h2>
+            <p>
+                how are we gonna wrap this up gang?
+                Suggestions: Summary of how we feel about the project? ("overall it was a good learning experience")
+            </p>
 
-              <aside class="notes">
-              </aside>
-          </section>
-
+            <aside class="notes">
+              
+            </aside>
+        </section>
 
       </div>
 
