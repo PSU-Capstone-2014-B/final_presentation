@@ -69,9 +69,9 @@
           <h2>Basic Overview of Routelandia</h2>
           <p>
           <ul>
-            <li>Android App Presents travel times on highways near Portland</li>
-            <li>historical data</li>
-            <li>Traffic is vaguely cyclical</li>
+            <li>Android app presents travel times on highways near Portland</li>
+            <li>Historical data</li>
+            <li>What do traffic cycles look like?</li>
             <li>Lets you know best time to hit highway</li>
           </ul>
           </p>
@@ -183,26 +183,46 @@
           <section>
           <section>
             <!-- TODO: Align the bullet points to the left instead of centered -->
-            <!-- TODO: readjust this slide -->
             <h2>So how did we do it?</h2>
             <p>
               <ul>
-                <li><b>Tech used</b>
+                <li>Java
                   <ul>
-                    <li>Java, PHP</li>
-                    <li>Postgres</li>
-                    <li>Restler</li>
-                  </ul>
-                  Tools used.
-                  <ul>
-                    <li>Android, php, behat, respect/relational, restler, {CHARTING LIBRARY?}, {200 meters to the line}, etc...</li>
+                    <li>Android</li>
+                    <li>PolyUtil</li>
+                    <li>AChartEngine</li>
                   </ul>
                 </li>
+                <li>PHP
+                  <ul>
+                    <li>Restler</li>
+                    <li>respect/relational</li>
+                    <li>behat</li>
+                  </ul>
+                </li>
+                <li>Postgres</li>
               </ul>
             </p>
             <aside class="notes">
               OWNER: JOHN
               
+              The two primary languages we used were Java, to create the front end,
+              and php to create the back end. The supplied database was written in
+              Postgres, and the back and front end communicate through a REST API with
+              JSON objects.
+              
+              The front end mostly focused on using the supplied Android libraries
+              to create the app, but several other libraries were used as well.
+              The PolyUtil library allowed us to restrict users to only placing
+              markers near our highways, improving the user experience, and 
+              AChartEngine (yes,that's it's name) let us elegantly display our
+              statistics.
+              
+              The back end also used some libraries in their programming.
+              Restler allowed us to not just create but automatically document
+              rest endpoints to communicate with the app. We also used
+              respect/relational to manage the different database objects,
+              and it all was tested using behat.
             </aside>
           </section>
 
