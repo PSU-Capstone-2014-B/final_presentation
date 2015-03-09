@@ -150,14 +150,15 @@
             <li class="fragment">Application Server
               <ul>
                 <li class="fragment">PHP based REST API</li>
-                <li class="fragment">&nbsp;&nbsp;(Restler framework chosen)</li>
-                <li class="fragment">May or may not have it's own database for user created data</li>
+                <li class="fragment">Restler framework chosen</li>
+                <li class="fragment">Server deployed through PORTAL</li>
               </ul>
             </li>
-            <li class="fragment">Client Applications
+            <li class="fragment">Client Application
               <ul>
                 <li class="fragment">Consume our REST API</li>
                 <li class="fragment">Draw data from API onto map provided by Google</li>
+                  <li class="fragment">The App was published through Google Play Store</li>
               </ul>
             </li>
           </ul>
@@ -166,28 +167,20 @@
 
             <aside class="notes">
               OWNER: Loc
+
+                Our data is postgre with postGIS plugin, we only read the data
+
+                The server is written by PHP language bases REST API with Restler framework
+
+                The app talks to the server via Rest API, the map layout provided via Google Maps API
+
+                The app was published in Google Play Store, if you're unclear about the functionality of the app,
+                you can download the app at URL above into your phone and play with it.
             </aside>
         </section>
         </section>
 
-        <section>
-          <h2>Distribution & Server Management</h2>
-          <ul>
-            <li>A functioning Android application which talks to a server deployed through PORTAL</li>
-            <li>The app will be distributed via Google PlayStore</li>
-            <li>Kristins server management will deploy the PHP backend</li>
-          </ul>
-          <aside class="notes">
-            OWNER: Loc
-
-            We build an Android app which communicate to the server deployed through portal.
-            The app was published in Google Play Store, if you're unclear about the functionality of the app,
-            you can download the app at URL above into your phone and play with it.
-            The server would deploy through PHP backend
-          </aside>
-        </section>
-
-        <section>
+          <section>
           <section>
             <!-- TODO: Align the bullet points to the left instead of centered -->
             <!-- TODO: readjust this slide -->
