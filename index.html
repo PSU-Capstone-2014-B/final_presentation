@@ -329,31 +329,104 @@
             <h2>What we would've done differently</h2>
             <p>
             <ul>
-                <li>Backend would not have gone with PHP</li>
+                <li>Backend would use different frameworks</li>
                 <ul>
-                    <li>Its quirkiness often slowed progress</li>
+                    <li>Different language if possible</li>
                     <li>The frameworks we used had little support</li>
                 </ul>
                 <li>Setting up a testing environment immediately</li>
-                <li><b>Leaving slide unfinished so front end can also add</b> </li>
+                <li>Using android hardware instead android emulation</li>
+                <ul><li>Android emulation was incredibly slow</li>
+                    <li>Made programming a very slow and frustrating process</li></ul>
+                <li>Different strategies for front end communication and issue tracking</li>
+                <ul><li>Backend and frontend teams used different management strategies</li></ul>
             </ul>
             </p>
 
             <aside class="notes">
               OWNER: Peter
+                What we would’ve done differently
+
+                First off in the backend, we would’ve wanted to choose a different language from PHP because PHP
+                comes with a lot of quirks. Additionally the frameworks for PHP we were using didn’t have much
+                support or documentation which made debugging difficult. The lack of search results outside of
+                their main website is something that should’ve sent up red flags in the start during our research.
+                Respect relational for example, required us to delve into their source code to figure out what was
+                going on and how to get it to do what we wanted it to do, even for tasks we thought would be simple,
+                like sending a raw SQL query to the database. The RESTler framework was better, had questions on
+                stack overflow and barebones documentation allowed us to get by without delving into the source code.
+
+                ———————————————
+                Also the frameworks were just way too big for what backend needed to do, which was “create API
+                for a database”. — Josh mentioned this, need to expand slightly on it
+                ——————————————
+
+                Something both the front end and back end didn’t do was setting up a proper testing environment
+                before we started writing code. For most of the project the backend was testing all the api routes
+                by hand which caused some niche api routes to break when someone forgot to test every single
+                one with every commit. In a perfect world code reviews would catch these but some still managed
+                to split through the cracks. It also made it hard to debug communication issues between front end
+                and back end. When frontend would try to call an api route and it would break, it was always initially
+                unclear if it was actually frontend’s or backend’s code at fault. Usually it was some combination
+                of both.
+
+                Front end initially assumed that android studios native android emulator would be sufficient
+                enough to work on. However the emulator ran incredibly slow on our machines, to the point of
+                making programming an incredibly frustrating process spending lots of time waiting instead
+                of being productive. By the end front end had a couple of old android phones being shared
+                between them which turned out to be better.
+
+                Backend had the advantage of having someone with previous technical leadership experience,
+                so we were able to set up a schedule we could all work in from the get-go that kept us on the
+                same page. Because front end team members, like the rest of the team except josh, were all very
+                new working in a project like this, they had some issues figuring out what worked for them and how
+                to really get on their feet in terms of communication, goal setting and issue tracking. If they
+                could do it over again they would’ve used the same management strategies that backend was using.
             </aside>
           </section>
 
           <section>
             <h2>If we had more time</h2>
             <p>
-              IOS App<br />
-              Multi-freeway routing<br />
+              <ul>
+              <li>IOS App</li>
+              <ul><li>Backend would not have to change</li>
+              <li>Whole team could work on it</li></ul>
+              <li>Multi-freeway routing</li>
+              <ul><li>Originally planned to be in product</li>
+              <li>Became stretch goal after major design change</li>
+              <li>Would require pg_routing and design change to PORTAL database</li></ul>
+              <li>Error reporting</li>
+              <ul><li>Ask the user if our prediction was close</li>
+                  <li>Serve as a tool to help highlight bad data or holes in PORTAL database</li></ul>
+              </ul>
               
             </p>
 
             <aside class="notes">
               OWNER: Peter
+
+                If we had more time
+
+                If we were where we are at now a month ago, we would’ve started working
+                on an iOS app. Most of the team could work on it since the backend wouldn’t
+                change, and we could use the lessons we learned from building the android app
+                and apply them.
+
+                However before we started the iOS app we’d want to work on multi-highway
+                routing first because this was initially supposed to be in the app but had
+                to be made a stretch goal after we did a major design change in terms of how
+                the app communicated with the server. We discussed a lot of kind’ve hacky ways
+                to go about it but would want to avoid because they relied on PHP doing the
+                number crunching  instead of keeping all that heavy computation inside the database.
+                After some research we discovered pg_routing would best suit our needs but it
+                would require some non-significant design changes in the PORTAL database which
+                would take time than we had to implement.
+
+                Finally we wanted to add some kind of error reporting as a tool for us and
+                PORTAL to highlight holes in the database or errors in the data. This would
+                let us know how far off the mark our predictions were for travel time.
+
             </aside>
           </section>
         </section>
