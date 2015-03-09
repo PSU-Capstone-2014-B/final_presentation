@@ -137,19 +137,54 @@
           </aside>
         </section>
 
+        <section data-transition="concave" data-state="img-left" data-background="img/architecture_diagram.png" data-background-transition="slide" data-background-size="30%">
         <section>
             <h2>What does it look like?</h2>
-            <ul>
-              <li>A functioning Android application which talks to a server deployed through PORTAL</li>
-              <li>The app will be distributed via Google PlayStore</li>
-              <li>Kristins server management will deploy the PHP backend</li>
-            </ul>
+          <ul style="margin-left:30%">
+            <li class="fragment">Databases
+              <ul>
+                <li class="fragment">Postgres with PostGIS plugin</li>
+                <li class="fragment">Read only from our perspective</li>
+              </ul>
+            </li>
+            <li class="fragment">Application Server
+              <ul>
+                <li class="fragment">PHP based REST API</li>
+                <li class="fragment">&nbsp;&nbsp;(Restler framework chosen)</li>
+                <li class="fragment">May or may not have it's own database for user created data</li>
+              </ul>
+            </li>
+            <li class="fragment">Client Applications
+              <ul>
+                <li class="fragment">Consume our REST API</li>
+                <li class="fragment">Draw data from API onto map provided by Google</li>
+              </ul>
+            </li>
+          </ul>
 
-            <img src="img/architecture_diagram.png" />
+            <!--<img src="img/architecture_diagram.png" />-->
 
             <aside class="notes">
               OWNER: Loc
             </aside>
+        </section>
+        </section>
+
+        <section>
+          <h2>Distribution & Server Management</h2>
+          <ul>
+            <li>A functioning Android application which talks to a server deployed through PORTAL</li>
+            <li>The app will be distributed via Google PlayStore</li>
+            <li>Kristins server management will deploy the PHP backend</li>
+          </ul>
+          <aside class="notes">
+            OWNER: Loc
+
+            We build an Android app which communicate to the server deployed through portal.
+            The app was published in Google Play Store, if you're unclear about the functionality of the app,
+            you can download the app at URL above into your phone and play with it.
+            The server would deploy through PHP backend
+          </aside>
         </section>
 
         <section>
