@@ -212,7 +212,7 @@
               
               The two primary languages we used were Java, to create the front end,
               and php to create the back end. The supplied database was written in
-              Postgres, and the back and front end communicate through Restler with
+              Postgres, and the back and front end communicate through a REST API with
               JSON objects.
               
               The front end mostly focused on using the supplied Android libraries
@@ -222,7 +222,11 @@
               AChartEngine (yes,that's it's name) let us elegantly display our
               statistics.
               
-              TODO: add in about backend tools.
+              The back end also used some libraries in their programming.
+              Restler allowed us to not just create but automatically document
+              rest endpoints to communicate with the app. We also used
+              respect/relational to manage the different database objects,
+              and it all was tested using behat.
             </aside>
           </section>
 
