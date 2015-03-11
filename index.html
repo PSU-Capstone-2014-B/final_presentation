@@ -110,7 +110,7 @@
               </ul>
             </li>
             <li class="fragment">
-              <b>Intelligent Transportation Systems & PORTAL</b><br />
+              <b>Intelligent Transportation Systems & Portal</b><br />
               <ul align="left">
               	<li>A powerful feature of information is performance-based trend representation.</li>
                 <li>Collection</li>
@@ -129,7 +129,7 @@
 
             ITS is an organization that has a place here at PSU. It stands for "Intelligent Transportation Systems". ITS' role here
             is to collect and analyze various information about traffic.
-            PORTAL is a sub-group within ITS that has a more specific role. It stands for Portland, Oregon Regional Transportation
+            Portal is a sub-group within ITS that has a more specific role. It stands for Portland, Oregon Regional Transportation
             Archive Listing. Their goal is to collect and archive various traffic data and statistics in the Portland Metro area.
 
             Nasim:  A powerful feature of information is performance-based trend representation. 
@@ -151,7 +151,7 @@
               <ul>
                 <li class="fragment">PHP based REST API</li>
                 <li class="fragment">Restler framework chosen</li>
-                <li class="fragment">Server deployed through PORTAL</li>
+                <li class="fragment">Server deployed through Portal</li>
               </ul>
             </li>
             <li class="fragment">Client Application
@@ -178,147 +178,6 @@
                 you can download the app at URL above into your phone and play with it.
             </aside>
         </section>
-        </section>
-<section>
-            <!-- TODO: Align the bullet points to the left instead of centered -->
-            <h2>Tools Used</h2>
-            <p>
-              <ul>
-                <li>Java
-                  <ul>
-                    <li>Android</li>
-                    <li>PolyUtil</li>
-                    <li>AChartEngine</li>
-                  </ul>
-                </li>
-                <li>PHP
-                  <ul>
-                    <li>Restler</li>
-                    <li>respect/relational</li>
-                    <li>behat</li>
-                  </ul>
-                </li>
-                <li>Postgres</li>
-              </ul>
-            </p>
-            <aside class="notes">
-              OWNER: JOHN
-              
-              The two primary languages we used were Java, to create the front end,
-              and php to create the back end. The supplied database was written in
-              Postgres, and the back and front end communicate through a REST API with
-              JSON objects.
-              
-              The front end mostly focused on using the supplied Android libraries
-              to create the app, but several other libraries were used as well.
-              The PolyUtil library allowed us to restrict users to only placing
-              markers near our highways, improving the user experience, and 
-              AChartEngine (yes,that's it's name) let us elegantly display our
-              statistics.
-              
-              The back end also used some libraries in their programming.
-              Restler allowed us to not just create but automatically document
-              rest endpoints to communicate with the app. We also used
-              respect/relational to manage the different database objects,
-              and it all was tested using behat.
-            </aside>
-          </section>
-          <section>
-          
-
-          <section>
-            <h2>Who did what?</h2>
-            <p>
-              We split up into teams!
-              <ul>
-                <li class="fragment"><b>Front end</b>
-                  <ul>
-                    <li>Nasim: UI/UX of front-end, visual statistics plot, marker and map interaction, date and time picker, splash screen.</li>
-                    <li>Loc uses data from the backend draw highway in the map and sets up CI</li>
-                    <li>John did QA</li>
-                  </ul>
-                </li>
-                <li class="fragment"><b>Back end</b>
-                  <ul>
-                    <li>Josh is leader and bearded wizard</li>
-                    <li>Peter is tall wizard. Wrote PHP and coordinated API structure with front-end</li>
-                    <li>Jesse is test wizard. Wrote wrote the testing enviornment</li>
-                  </ul>
-                </li>
-              </ul>
-            </p>
-
-            <aside class="notes">
-              OWNER: Rob
-
-              <p>
-                So, who did what? I split the teams up into three separate
-                groups initially: Front-end, Back-end and UI design. UI
-                design was a temporary team composed of Nasim and Jesse. They
-                were responsible with coming up with the look of the
-                front-end app. Once that was finished, I re-assigned Nasim to
-                the front-end and Jesse to the back-end.
-              </p>
-              <p>NEXT FRAGMENT - PRESS DOWN!!!</p>
-              <p>
-                The front-end was composed of Loc, John and later
-                Nasim. Loc was put in charge of the sub-group and
-                responsible for putting down the groundwork for the
-                application. Nasim implemented several of the graphical
-                features such as the splash screen, date and time picker,
-                and statistics plot. John worked on testing and doing QA
-                work.
-              </p>
-              <p>NEXT FRAGMENT - PRESS DOWN!!!</p>
-              <p>
-                The back-end had Josh, Peter and then Jesse. Josh was the
-                lead, bearded Wizard (their choice of title) and laid the
-                foundation for the server application as well as writing
-                the Postgres queries. Peter wrote lots of PHP code and took
-                the lead with working with the Front-end and decided how
-                the API structure would be implemented. When Jesse came on
-                board, because of his experience writing test code at work,
-                he took over the role of writing the entire test suite.
-              </p>
-            </aside>
-          </section>
-
-          <section>
-              <h2>Schedules and Process</h2>
-              <ul>
-                <li>"Full time Student" agile
-                  <ul>
-                    <li>No daily stand ups</li>
-                    <li>Weekly meetings and goal setting</li>
-                  </ul>
-                </li>
-                <li>Schedule changes</li>
-                <li>Handoff process</li>
-              </ul>
-
-              <aside class="notes">
-                OWNER: Rob
-                <p>Each of our schedules varied greatly. John has a full-time
-                work schedule, Nasim is a student at two universities,
-                Jesse has a job and a family. With this situation, we had
-                to adopt a "modified" agile development method. It was not
-                possible to hold daily standups, but we did have weekly
-                meetings where we tracked our progress and set goals for
-                the following week.</p>
-
-                <p>Since our last presentation, we've had a few changes to the
-                schedule we laid out for ourselves. As stated earlier, we
-                were unable to implement highway chaining, but refined our
-                monthly milestones such as successfully drawing lines over
-                the freeways where there was data and writing queries for
-                route statistics.</p>
-
-                <p>Our handoff is pretty simple. Since our software is free,
-                Portal will only need to deploy a build on their servers
-                which the app on the Playstore will reference. No signing
-                over rights or IP is necessary for this project.</p>
-              </aside>
-          </section>
         </section>
 
         <section>
@@ -374,13 +233,150 @@
             </aside>
           </section>
         </section>
-
-
-        <section>
+          
           <section>
-            <h2>About the Data</h2>
-            Statistics are hard!
-          </section>
+            <section><h2>Development</h2></section>
+
+            <section>
+              <h2>Who did what?</h2>
+              <p>
+                We split up into teams!
+                <ul>
+                  <li class="fragment"><b>Front end</b>
+                    <ul>
+                      <li>Nasim: UI/UX of front-end, visual statistics plot, marker and map interaction, date and time picker, splash screen.</li>
+                      <li>Loc uses data from the backend draw highway in the map and sets up CI</li>
+                      <li>John did QA</li>
+                    </ul>
+                  </li>
+                  <li class="fragment"><b>Back end</b>
+                    <ul>
+                      <li>Josh is leader and bearded wizard</li>
+                      <li>Peter is tall wizard. Wrote PHP and coordinated API structure with front-end</li>
+                      <li>Jesse is test wizard. Wrote wrote the testing enviornment</li>
+                    </ul>
+                  </li>
+                </ul>
+              </p>
+
+              <aside class="notes">
+                OWNER: Rob
+
+                <p>
+                  So, who did what? I split the teams up into three separate
+                  groups initially: Front-end, Back-end and UI design. UI
+                  design was a temporary team composed of Nasim and Jesse. They
+                  were responsible with coming up with the look of the
+                  front-end app. Once that was finished, I re-assigned Nasim to
+                  the front-end and Jesse to the back-end.
+                </p>
+                <p>NEXT FRAGMENT - PRESS DOWN!!!</p>
+                <p>
+                  The front-end was composed of Loc, John and later
+                  Nasim. Loc was put in charge of the sub-group and
+                  responsible for putting down the groundwork for the
+                  application. Nasim implemented several of the graphical
+                  features such as the splash screen, date and time picker,
+                  and statistics plot. John worked on testing and doing QA
+                  work.
+                </p>
+                <p>NEXT FRAGMENT - PRESS DOWN!!!</p>
+                <p>
+
+                  The back-end had Josh, Peter and then Jesse. Josh was the
+                  lead, bearded Wizard (their choice of title) and laid the
+                  foundation for the server application as well as writing
+                  the Postgres queries. Peter wrote lots of PHP code and took
+                  the lead with working with the Front-end and decided how
+                  the API structure would be implemented. When Jesse came on
+                  board, because of his experience writing test code at work,
+                  he took over the role of writing the entire test suite.
+                </p>
+              </aside>
+            </section>
+
+            <section>
+                <h2>Schedules and Process</h2>
+                <ul>
+                  <li>"Full time Student" agile
+                    <ul>
+                      <li>No daily stand ups</li>
+                      <li>Weekly meetings and goal setting</li>
+                    </ul>
+                  </li>
+                  <li>Schedule changes</li>
+                  <li>Handoff process</li>
+                </ul>
+
+                <aside class="notes">
+                  OWNER: Rob
+                  <p>Each of our schedules varied greatly. John has a full-time
+                  work schedule, Nasim is a student at two universities,
+                  Jesse has a job and a family. With this situation, we had
+                  to adopt a "modified" agile development method. It was not
+                  possible to hold daily standups, but we did have weekly
+                  meetings where we tracked our progress and set goals for
+                  the following week.</p>
+
+                  <p>Since our last presentation, we've had a few changes to the
+                  schedule we laid out for ourselves. As stated earlier, we
+                  were unable to implement highway chaining, but refined our
+                  monthly milestones such as successfully drawing lines over
+                  the freeways where there was data and writing queries for
+                  route statistics.</p>
+
+                  <p>Our handoff is pretty simple. Since our software is free,
+                  Portal will only need to deploy a build on their servers
+                  which the app on the Playstore will reference. No signing
+                  over rights or IP is necessary for this project.</p>
+                </aside>
+            </section>
+
+
+            <section>
+              <!-- TODO: Align the bullet points to the left instead of centered -->
+              <h2>Tools Used</h2>
+              <p>
+                <ul>
+                  <li>Java
+                    <ul>
+                      <li>Android</li>
+                      <li>PolyUtil</li>
+                      <li>AChartEngine</li>
+                    </ul>
+                  </li>
+                  <li>PHP
+                    <ul>
+                      <li>Restler</li>
+                      <li>respect/relational</li>
+                      <li>behat</li>
+                    </ul>
+                  </li>
+                  <li>Postgres</li>
+                </ul>
+              </p>
+              <aside class="notes">
+                OWNER: JOHN
+                
+                The two primary languages we used were Java, to create the front end,
+                and php to create the back end. The supplied database was written in
+                Postgres, and the back and front end communicate through a REST API with
+                JSON objects.
+                
+                The front end mostly focused on using the supplied Android libraries
+                to create the app, but several other libraries were used as well.
+                The PolyUtil library allowed us to restrict users to only placing
+                markers near our highways, improving the user experience, and 
+                AChartEngine (yes,that's it's name) let us elegantly display our
+                statistics.
+                
+                The back end also used some libraries in their programming.
+                Restler allowed us to not just create but automatically document
+                rest endpoints to communicate with the app. We also used
+                respect/relational to manage the different database objects,
+                and it all was tested using behat.
+              </aside>
+            </section>
         </section>
 
 
@@ -505,11 +501,11 @@
               <li class="fragment">Multi-freeway routing
               <ul><li>Originally planned to be in product
               <li>Became stretch goal after major design change</li>
-              <li>Would require pg_routing and design change to PORTAL database</li></ul>
+              <li>Would require pg_routing and design change to Portal database</li></ul>
               </li>
               <li class="fragment">Error reporting
               <ul><li>Ask the user if our prediction was close</li>
-                  <li>Serve as a tool to help PORTAL highlight missing or incorrect data</li></ul>
+                  <li>Serve as a tool to help Portal highlight missing or incorrect data</li></ul>
               </li>
               </ul>
 
@@ -539,8 +535,8 @@
 
                 NEXT
                 <br />
-                <p>Finally we wanted to add some kind of error reporting as a tool for us and PORTAL
-                    to highlight missing or incorrect data in the PORTAL database. This would let us know
+                <p>Finally we wanted to add some kind of error reporting as a tool for us and Portal
+                    to highlight missing or incorrect data in the Portal database. This would let us know
                     how far off the mark our predictions were for travel time. </p>
 
 
