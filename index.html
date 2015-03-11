@@ -66,85 +66,84 @@
         </section>
 
         <section>
-          <h2>Basic Overview of Routelandia</h2>
-          <p>
-          <ul>
-            <li>Android app presents travel times on highways near Portland</li>
-            <li>Historical data</li>
-            <li>What do traffic cycles look like?</li>
-            <li>Lets you know best time to hit highway</li>
-          </ul>
-          </p>
-
-          <aside class="notes">
-            OWNER: John
-            Answer these questions:
-            What does your product do? Why is it needed? Who will use it?
-
-            Routelandia is a native android app that
-            shows travel times along highways. To do this, it
-            pulls historical traffic data from highways around
-            the general Portland area.
-
-            The hook is this app won't just give you a travel
-            time for just one moment, but before and after it as well.
-            It does this by looking at travel times in the near past
-            to predict them in the future.
-
-            Traffic tends to follow cycles, as anyone in
-            rush-hour traffic can tell you. Routelandia lets you
-            conveniently see what those cycles look like,
-            letting anyone know when's the best time to hit the road.
-          </aside>
-        </section>
-
-         <section>
-          <h2>Data Into Information</h2>
-          <ul>
-            <li class="fragment">
-              <b>Transportation data collection through Various applications and technologies</b><br />
-              <ul align="left">
-                <li>Traffic Detectors</li>
-                <li>Data Base Management System</li>
-                <li>3 TB of Traffic Data</li>
-              </ul>
-            </li>
-            <li class="fragment">
-              <b>Intelligent Transportation Systems & Portal</b><br />
-              <ul align="left">
-              	<li>A powerful feature of information is performance-based trend representation.</li>
-                <li>Collection</li>
-                <li>Prediction and diagnostics by statistical inference</li>
-                <li>Visualization and analysis on parameters of interest</li>
-                <li>Performance trend</li>
-                <li>Optimization and evolutionary adaptation of daily performance</li>
-              </ul>
-            </li>
-          </ul>
-
-          <aside class="notes">
-            OWNER: Nasim
-            - Data is hard!
-            - Information should be easy!
-
-            ITS is an organization that has a place here at PSU. It stands for "Intelligent Transportation Systems". ITS' role here
-            is to collect and analyze various information about traffic.
-            Portal is a sub-group within ITS that has a more specific role. It stands for Portland, Oregon Regional Transportation
-            Archive Listing. Their goal is to collect and archive various traffic data and statistics in the Portland Metro area.
-
-            Nasim:  A powerful feature of information is performance-based trend representation. 
-            Collecting -> diagnostics and statistical inference -> visualization and analysis of parameters -> performance trend -> optimization and evolutionary adaptation to rate of change.  
-          </aside>
-        </section>
-
-        <section data-transition="concave" data-state="img-left" data-background="img/architecture_diagram.png" data-background-transition="slide" data-background-size="30%">
-
           <section>
           <h2>Conceptual</h2>
           </section>
 
           <section>
-              <h2>Architecture</h2>
+            <h2>Basic Overview of Routelandia</h2>
+            <p>
+            <ul>
+              <li>Android app presents travel times on highways near Portland</li>
+              <li>Historical data</li>
+              <li>What do traffic cycles look like?</li>
+              <li>Lets you know best time to hit highway</li>
+            </ul>
+            </p>
+
+            <aside class="notes">
+              OWNER: John
+              Answer these questions:
+              What does your product do? Why is it needed? Who will use it?
+
+              Routelandia is a native android app that
+              shows travel times along highways. To do this, it
+              pulls historical traffic data from highways around
+              the general Portland area.
+
+              The hook is this app won't just give you a travel
+              time for just one moment, but before and after it as well.
+              It does this by looking at travel times in the near past
+              to predict them in the future.
+
+              Traffic tends to follow cycles, as anyone in
+              rush-hour traffic can tell you. Routelandia lets you
+              conveniently see what those cycles look like,
+              letting anyone know when's the best time to hit the road.
+            </aside>
+          </section>
+
+           <section>
+            <h2>Data Into Information</h2>
+            <ul>
+              <li class="fragment">
+                <b>Transportation data collection through Various applications and technologies</b><br />
+                <ul align="left">
+                  <li>Traffic Detectors</li>
+                  <li>Data Base Management System</li>
+                  <li>3 TB of Traffic Data</li>
+                </ul>
+              </li>
+              <li class="fragment">
+                <b>Intelligent Transportation Systems & Portal</b><br />
+                <ul align="left">
+                  <li>A powerful feature of information is performance-based trend representation.</li>
+                  <li>Collection</li>
+                  <li>Prediction and diagnostics by statistical inference</li>
+                  <li>Visualization and analysis on parameters of interest</li>
+                  <li>Performance trend</li>
+                  <li>Optimization and evolutionary adaptation of daily performance</li>
+                </ul>
+              </li>
+            </ul>
+
+            <aside class="notes">
+              OWNER: Nasim
+              - Data is hard!
+              - Information should be easy!
+
+              ITS is an organization that has a place here at PSU. It stands for "Intelligent Transportation Systems". ITS' role here
+              is to collect and analyze various information about traffic.
+              Portal is a sub-group within ITS that has a more specific role. It stands for Portland, Oregon Regional Transportation
+              Archive Listing. Their goal is to collect and archive various traffic data and statistics in the Portland Metro area.
+
+              Nasim:  A powerful feature of information is performance-based trend representation. 
+              Collecting -> diagnostics and statistical inference -> visualization and analysis of parameters -> performance trend -> optimization and evolutionary adaptation to rate of change.  
+            </aside>
+          </section>
+
+          <section data-transition="concave" data-state="img-left" data-background="img/architecture_diagram.png" data-background-transition="slide" data-background-size="30%">
+            <h2>Architecture</h2>
             <ul style="margin-left:30%">
               <li class="fragment">Databases
                 <ul>
@@ -168,20 +167,20 @@
               </li>
             </ul>
 
-              <!--<img src="img/architecture_diagram.png" />-->
+            <!--<img src="img/architecture_diagram.png" />-->
 
-              <aside class="notes">
-                OWNER: Loc
+            <aside class="notes">
+              OWNER: Loc
 
-                  Our data is postgre with postGIS plugin, we only read the data
+                Our data is postgre with postGIS plugin, we only read the data
 
-                  The server is written by PHP language bases REST API with Restler framework
+                The server is written by PHP language bases REST API with Restler framework
 
-                  The app talks to the server via Rest API, the map layout provided via Google Maps API
+                The app talks to the server via Rest API, the map layout provided via Google Maps API
 
-                  The app was published in Google Play Store, if you're unclear about the functionality of the app,
-                  you can download the app at URL above into your phone and play with it.
-              </aside>
+                The app was published in Google Play Store, if you're unclear about the functionality of the app,
+                you can download the app at URL above into your phone and play with it.
+            </aside>
           </section>
         </section>
 
