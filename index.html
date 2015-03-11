@@ -161,15 +161,15 @@
 
             <aside class="notes">
               OWNER: Loc
+              The top part is the portal main database. Data is read only.  It’s Postgres with PostGIS Plugin
 
-                Our data is postgre with postGIS plugin, we only read the data
-
-                The server is written by PHP language bases REST API with Restler framework.
+              The green box is the server .Its written by PHP language bases REST API with Restler framework.
                 the server deployed through portal
 
-                The app talks to the server via Rest API, the map layout provided via Google Maps API
+              The blue box is the client. The android app will talk to the server via Rest API and interchange the JSON data.
+              It draw the highway segment data onto the map layout which provided by google  mapAPI
+              The app will publish through google play store
 
-                The app was published in Google Play Store .
             </aside>
           </section>
         </section>
