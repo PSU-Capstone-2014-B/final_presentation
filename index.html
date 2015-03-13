@@ -176,7 +176,9 @@
             <img src="img/startScreen.png" height="675" />
 
             <aside class="notes">
-              OWNER: Josh
+              OWNER: Josh<br />
+              <br />
+              The app starts with the loading screen, and begins loading highway data in the background.
             </aside>
           </section>
 
@@ -184,7 +186,10 @@
             <img src="img/mapNoMarkers.png" height="675" />
 
             <aside class="notes">
-              OWNER: Josh
+              OWNER: Josh<br />
+              <br />
+              Once the highway data is loaded we display all of the highways that we have data for, drawing each as a unique color
+              so that the user can pick two points along the same highway.
             </aside>
           </section>
 
@@ -192,7 +197,10 @@
             <img src="img/mapWithMarkers.png" height="675" />
 
             <aside class="notes">
-              OWNER: Josh
+              OWNER: Josh<br />
+              <br />
+              The application enforces that the user taps a point within 200 meters of a highway, so that we can determine where
+              along the highway they want to start and end their journey.
             </aside>
           </section>
 
@@ -200,7 +208,11 @@
             <img src="img/timePicker.png" height="675" />
 
             <aside class="notes">
-              OWNER: Josh
+              OWNER: Josh<br />
+              <br />
+              The user then picks the time they're interested in traveling, and which day of the week.<br />
+              Day of the week important, because the statistics we're about to see are generated for the last 6 weeks of the chosen
+              weekday. This allows the user to determine if traffic on a Friday is different than traffic on a Tuesday.
             </aside>
           </section>
 
@@ -208,7 +220,12 @@
             <img src="img/barGraphAlt.png" height="675" />
 
             <aside class="notes">
-              OWNER: Josh
+              OWNER: Josh<br />
+              <br />
+              This shows the 4-hour block (2 hours to either side) of the user's chose time, broken up into 15 minute increments,
+              letting the user see what the average travel time for their route, and average speed across their route is, during
+              each 15 minute interval.<br />
+              At the top you'll see a percentage accuracy measurement, which gives the user some sort of idea about how much to trust these numbers.
             </aside>
           </section>
 
@@ -216,7 +233,12 @@
             <img src="img/statsTable.png" />
 
             <aside class="notes">
-              OWNER: Josh
+              OWNER: Josh<br />
+              <br />
+              If you rotate your phone sideways you'll see that we give the same information in a table, which includes the accuracy
+              measurement for each 15 minute interval. Accuracy is the number of readings that the detectors in the chose route *should* have given
+              off over a 15 minute interval, vs how many we actually got when we did the query.<br />
+              This may not be as interesting to the end user, but to Portal/ODOT this information is interesting to know as it allows you to see trends in where detectors are firing every 20 seconds or not.
             </aside>
           </section>
         </section>
@@ -386,12 +408,11 @@
             </ul>
 
             <aside class="notes">
-              OWNER: Josh
-              We discovered we would not be able to associate attributes to drawn
-              lines on google maps which caused us to have to restructure our project.
-              We responded by having one particularly long meeting figuring out how to
-              attack the project from this new angle.
-
+              OWNER: Josh<br />
+              <br />
+              We chose to use highways only because of the differences in the data structure for the arterials...<br />
+              Clicking near the line was hard, Android doesn't seem to like objects on it's maps...<br />
+              Multiple highways. Multi-path routing, different data types on arterials, missing sections, all hard problems!
             </aside>
           </section>
 
